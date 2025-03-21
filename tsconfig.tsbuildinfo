@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/controller/GetUsers.ts","./src/routes/getuser.routes.ts","./src/utils/asyncHandler.ts"],"version":"5.6.3"}
