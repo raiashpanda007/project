@@ -19,6 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));  
 import getUserRoutes from './routes/getuser.routes'
 app.use('/users',getUserRoutes)
+import getPopularPost from './controller/GetPosts'
+app.use('/posts',getPopularPost)
 
 app.listen(3000,()=>{
     console.log('Server is running on port 3000')

@@ -21,6 +21,8 @@ app.use(express_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.static("public"));
 const getuser_routes_1 = __importDefault(require("./routes/getuser.routes"));
 app.use('/users', getuser_routes_1.default);
+const GetPosts_1 = __importDefault(require("./controller/GetPosts"));
+app.use('/posts', GetPosts_1.default);
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
